@@ -1,0 +1,111 @@
+.contact__section {
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+}
+
+.contact__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.contact__header hr {
+    background: var(--primary-bg-color);
+    border: 0.05rem solid var(--primary-bg-color);
+    height: 0.2rem;
+    width: 50%;
+}
+
+.contact__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__item {
+    font-family: var(--font-secondary);
+    height: 3rem;
+    border: 2px solid var(--primary-bg-color);
+    border-radius: 2rem;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+}
+
+
+.contact__body-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact__socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.form__body-top {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+
+.form-submit {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background: var(--primary-bg-color);
+    color: var(--color-white);
+    padding: 0.6rem 0.8rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+    margin: 0.5rem 0;
+}
+
+.form-submit:hover {
+    background: var(--accent-color);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+
+.form__item-textarea {
+    font-family: var(--font-secondary);
+    border: 2px solid var(--primary-bg-color);
+    border-radius: 1rem;
+    word-wrap: break-word;
+    height: 10rem;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.contact__socials {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.contact__socials a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+    
+}
+
+.contact__socials svg {
+    font-size: 1.5rem;
+}
+
+.contact__socials a > h5 {
+    display: none;
+}

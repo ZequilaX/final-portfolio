@@ -1,0 +1,146 @@
+.skills__container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+
+.skills__title {
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.skill-card {
+    color: var(--color-white);
+    background: var(--primary-bg-color);
+    padding: 2rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem
+}
+
+.skill-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-white);
+    color: var(--primary-bg-color);
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+}
+
+.skill-card-top h2 {
+    font-size: 2rem;
+}
+
+.skill-card-top svg {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.skill-progress-slider {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: var(--primary-bg-color);
+    background: var(--color-white);
+    border: solid 2px var(--color-white);
+    border-radius: 0 1.5rem 1.5rem 0;
+    height: 2.5rem;
+}
+
+.skill-progress-slider h5 {
+    position: absolute;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.skill__progress-percentage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-white);
+    background: var(--primary-bg-color);
+    height: 100%;
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.decoration__pattern-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.decoration__pattern-container img {
+    height: 100%;
+    padding: 1rem;
+}
+
+.decoration-vertical {
+    aspect-ratio: 1/1;
+}
+
+.percent-98 {
+    width: 98%;
+}
+
+.percent-97 {
+    width: 97%;
+}
+
+.percent-93 {
+    width: 93%;
+}
+
+.percent-90 {
+    width: 97%;
+}
+
+.percent-80 {
+    width: 80%;
+}
+
+.percent-85 {
+    width: 85%;
+}
+
+.percent-75 {
+    width: 75%;
+}
+
+.percent-70 {
+    width: 70%;
+}
+
+.percent-60 {
+    width: 60%;
+}
+
+.decoration__line-slider {
+    background: var(--color-white);
+    height: 0.15rem;
+    width: 12rem;
+    align-self: center;
+}
+
+.decoration__line-slider-short {
+    background: var(--color-white);
+    height: 0.15rem;
+    width: 9rem;
+    align-self: center;
+}

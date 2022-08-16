@@ -1,0 +1,110 @@
+#about {
+    background: var(--primary-bg-color);
+    color: var(--color-white);
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+#about__splash-image {
+    width: 15rem;
+    position: absolute;
+    top: 1;
+    right: 1;
+    margin-left: 5rem;
+}
+
+#about__lightning-image-top {
+    width: 5rem;
+    position: absolute;
+    top: 1;
+    right: 0;
+    margin-right: 5rem;
+  }
+
+  #about__lightning-image-bottom {
+    width: 5rem;
+    position: absolute;
+    top: 1;
+    left: 0;
+    margin-left: 6rem;
+    transform: rotate(180deg);
+  }
+
+  .about-image-container {
+    border: Solid var(--color-white) 6px;
+    border-radius: 10rem 10rem 0 0; 
+    width: 50%;
+    margin: 10rem 0;
+  }
+
+  .about__text-content h2 {
+    font-size: 2rem;
+  }
+
+  .about__text-content p {
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-p);
+  }
+
+  .decoration-line {
+    background: var(--color-white);
+    height: 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 70%;
+  }
+
+  .button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ======= Media Queries - Tablet Devices ======= */
+@media screen and (max-width: 1024px) {
+  .about__cards {
+      flex-direction: column;
+  }
+
+  .about__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+  }
+
+  .about__me {
+      width: 50%;
+      margin: 2rem auto 4rem;
+  }
+
+  .about__content p {
+      margin: 1rem 0 1.5rem;
+  }
+}
+
+/* ======= Media Queries - Tablet Devices ======= */
+@media screen and (max-width: 1024px) {
+  
+}
+
+/* Media Queries - Mobile Devices */
+@media screen and (max-width: 600px) {
+  #about__lightning-image-top {
+    margin-right: 2rem;
+    transform: rotate(25deg)
+  }
+
+  #about__lightning-image-bottom {
+    margin-left: 2.5rem;
+  }
+
+  .about__text-content {
+   padding: 0 1rem;
+  }
+}
