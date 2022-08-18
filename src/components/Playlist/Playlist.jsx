@@ -17,11 +17,11 @@ const Playlist = () => {
                 </div>
                 <div class="spotify__right">
                     <div class="playlist__container" onmouseover="hideCdCover()" onmouseleave="restCdCoverState()">
-                        <img src={CdCover} id="cd-cover" class="cd-rotation" />
-                        <iframe src="https://open.spotify.com/embed/playlist/19qFWIid6oivwJTSCaz0Mf?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <img src={CdCover} id="cd-cover" class="cd-rotation" alt=""/>
+                        <iframe src="https://open.spotify.com/embed/playlist/19qFWIid6oivwJTSCaz0Mf?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="#"></iframe>
                     </div>
                     <div class="spotify__button">
-                        <a href="https://open.spotify.com/playlist/19qFWIid6oivwJTSCaz0Mf?go=1&sp_cid=8107d984953588b1af777e03b6974b22&utm_source=embed_player_m&utm_medium=desktop&nd=1" target="_blank">PLAY ON SPOTIFY</a>
+                        <a href="https://open.spotify.com/playlist/19qFWIid6oivwJTSCaz0Mf?go=1&sp_cid=8107d984953588b1af777e03b6974b22&utm_source=embed_player_m&utm_medium=desktop&nd=1" target="_blank" rel="noreferrer">PLAY ON SPOTIFY</a>
                     </div>
                 </div>
             </div>

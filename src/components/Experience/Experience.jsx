@@ -1,7 +1,9 @@
 import React from 'react'
 import './experience.css'
-import {BsBriefcase} from '../../../node_modules/react-icons/bs'
 import {BsDot} from '../../../node_modules/react-icons/bs'
+import {BsBriefcase} from '../../../node_modules/react-icons/bs'
+import {FaGraduationCap} from '../../../node_modules/react-icons/fa'
+
 
 
 const Experience = () => {
@@ -54,7 +56,7 @@ const Experience = () => {
               </div>
               <div className="timeline__middle">
                 <div className="timeline__point">
-                  <i className="fa-solid fa-eye"></i>
+                  <BsBriefcase />
                   <div className="timeline__point-line timeline__point-line-left"></div>
                 </div>
               </div>
@@ -66,7 +68,7 @@ const Experience = () => {
               </div>
               <div className="timeline__middle">
                 <div className="timeline__point">
-                  <i className="fa-solid fa-burger"></i>
+                  <BsBriefcase />
                   <div className="timeline__point-line timeline__point-line-right"></div>
                 </div>
               </div>
@@ -112,7 +114,7 @@ const Experience = () => {
               </div>
               <div className="timeline__middle">
                 <div className="timeline__point">
-                  <i className="fa-solid fa-headphones-simple"></i>
+                  <BsBriefcase />
                   <div className="timeline__point-line timeline__point-line-left"></div>
                 </div>
               </div>
@@ -136,7 +138,7 @@ const Experience = () => {
               </div>
               <div className="timeline__middle">
                   <div className="timeline__point">
-                    <i className="fa-solid fa-code"></i>
+                    <FaGraduationCap />
                     <div className="timeline__point-line timeline__point-line-right"></div>
                   </div>
               </div>
@@ -162,7 +164,7 @@ const Experience = () => {
               </div>
               <div className="timeline__middle">
                 <div className="timeline__point">
-                  <i className="fa-solid fa-code"></i>
+                  <FaGraduationCap />
                   <div className="timeline__point-line timeline__point-line-left"></div>
                 </div>
               </div>
@@ -174,7 +176,7 @@ const Experience = () => {
               </div>
               <div className="timeline__middle">
                 <div className="timeline__point">
-                  <i className="fa-solid fa-graduation-cap"></i>
+                  <FaGraduationCap />
                   <div className="timeline__point-line timeline__point-line-right"></div>
                 </div>
               </div>
@@ -198,7 +200,7 @@ const Experience = () => {
               </div>
               <div className="timeline__middle">
                 <div className="timeline__point">
-                  <i className="fa-solid fa-graduation-cap"></i>
+                  <FaGraduationCap />
                   <div className="timeline__point-line timeline__point-line-left"></div>
                 </div>
               </div>

@@ -5,6 +5,7 @@ header {
 
 .header__container {
     display: flex;
+    justify-content: center;
     text-align: left;
     height: 100%;
     position: relative;
@@ -19,11 +20,11 @@ header {
 }
 
 .header__content-left {
-    width: 100%;
+    width: 95%;
 }
 
 .header__content-left h1 {
-    font-size: 6.7rem;
+    font-size: 5rem;
     line-height: 6rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -31,7 +32,7 @@ header {
 }
 
 .header__content-left h2 {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 0.27rem;
     text-transform: uppercase;
@@ -39,7 +40,7 @@ header {
 
 
 .header__content-left h3 {
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     letter-spacing: 0.125rem;
     font-weight: 200;
 }
@@ -66,63 +67,151 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    gap: 4rem;
+    gap: 2rem;
     margin-top: 1rem;
 }
 
 
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .about__container {
+    flex-direction: row;
+    gap: 4rem;
+  }
 
-@media screen and (max-width: 1024px) {
-    header {
-        height: 68vh;
-    }
+  #about__splash-image {
+    width: 20rem;
+    right: 0;
+    margin-right: 50%;
+  }
+
+  #about__lightning-image-top {
+    margin-right: 8rem;
+  }
+
+  #about__lightning-image-bottom {
+    margin-left: 62%;
+    margin-top: 1rem;
+  }
+
+  .about__text-content {
+    width: 70%;
+    padding-right: 1rem;
+  }
+
+  .about__text-content p {
+    font-size: 1rem;
+  }
+
+  .about-image-container {
+    width: 30%;
+  }
+
+  .button__container {
+    justify-content: space-between;
+  }
+
+  .button__container > button {
+    width: 50%;
+  }
+
+
+  .decoration-line-long-white {
+    background: var(--color-white);
+    height: 0.1rem;
+    width: 45%;
+
+  }
 }
 
-/* Media Queries - Mobile Devices */
-@media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
-        padding-top: 4rem;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .header__content {
+        flex-direction: column-reverse;
+        padding-bottom: 3rem;
     }
 
-    .header__socials {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    header {
-        height: 100vh;
-        padding-top: 8rem;
+    .header__content-right {
+        display: flex;
+        justify-content: center;
     }
 
-    .header__socials {
-        display: none;
+    .header__content-right img {
+        width: 50%;
     }
-}
 
-@media screen and (max-width: 992px) {
-    header {
-        height: 100vh;
-        padding: 0;
+    .header__content-left {
+        width: 50%;
     }
 
     .header__content-left h1 {
-        font-size: 6rem;
-        line-height: 3.5rem;
+        font-size: 7rem;
     }
 
     .header__content-left h2 {
-        font-size: 2.5rem;
+        font-size: 2.9rem;
+        line-height: 4rem;
     }
 
     .header__content-left h3 {
-        line-height: 1rem;
-        font-size: 1.7rem;
+        font-size: 1.9rem;
+        line-height: 2rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .header__content {
+        flex-direction: row;
+        padding-bottom: 0rem;
     }
 
-    .cta {
-        margin-top: 2rem;
+    .header__content-left {
+        width: 50%;
     }
-    
+
+    .header__content-left h1 {
+        font-size: 8rem;
+    }
+
+    .header__content-left h2 {
+        font-size: 3.4rem;
+        line-height: 4rem;
+    }
+
+    .header__content-left h3 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+   .header__content {
+    flex-direction: row;
+    padding-bottom: 0rem;
+   }
+
+   .header__content-left {
+    width: 50%;
+   }
+
+   .header__content-left h1 {
+    font-size: 8rem;
+   }
+
+   .header__content-left h2 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+   }
+
+   .header__content-left h3 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+   }
 }

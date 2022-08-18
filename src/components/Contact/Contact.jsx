@@ -14,19 +14,19 @@ const Contact = () => {
               <hr />
             </div>
             <div class="contact__socials">
-              <a href="https://github.com/ZequilaX" target="_blank">
+              <a href="https://github.com/ZequilaX" target="_blank" rel="noreferrer">
                 <BsGithub/>
                 <h5 class="social__icon-text">GitHub</h5>
               </a>
-              <a href="https://www.instagram.com/cyanide.digital/" target="_blank">
+              <a href="https://www.instagram.com/cyanide.digital/" target="_blank" rel="noreferrer">
                 <BsInstagram/>
                 <h5 class="social__icon-text">Instagram</h5>
               </a>
-              <a href="https://www.linkedin.com/in/sebastian-collison-465601207/" target="_blank">
+              <a href="https://www.linkedin.com/in/sebastian-collison-465601207/" target="_blank" rel="noreferrer">
                 <BsLinkedin/>
                 <h5 class="social__icon-text">LinkedIn</h5>
               </a>
-              <a href="mailto:sebcollison@gmail.com" target="_blank">
+              <a href="mailto:sebcollison@gmail.com" target="_blank" rel="noreferrer">
                 <MdMail/>
                 <h5 class="social__icon-text">Mail</h5>
               </a>

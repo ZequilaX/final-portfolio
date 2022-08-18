@@ -7,7 +7,7 @@ import ME from '../../assets/me.png'
 const About = () => {
     return (
       <section id="about">
-        <img src={whiteSplash} id="about__splash-image"/>
+        <img src={whiteSplash} id="about__splash-image" alt="" />
         <div className="container about__container">
           <div className="about__container">
             <div className="about__text-content">
@@ -21,9 +21,9 @@ const About = () => {
               </div>
             </div>
             <div className="about-image-container">
-              <img src={lightningSpark} id="about__lightning-image-top"/>
-              <img src={ME} id="about-image"/>
-              <img src={lightningSpark} id="about__lightning-image-bottom"/>
+              <img src={lightningSpark} id="about__lightning-image-top" alt=""/>
+              <img src={ME} id="about-image" alt=""/>
+              <img src={lightningSpark} id="about__lightning-image-bottom" alt=""/>
             </div>
           </div>
         </div>

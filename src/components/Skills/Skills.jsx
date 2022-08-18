@@ -52,13 +52,13 @@ const Skills = () => {
 
                         <div className="decoration__pattern-container">
                             <div className="decoration__pattern-container">
-                                <img src={linesHorizontal} />
+                                <img src={linesHorizontal} alt="" />
                             </div>
                             <div className="decoration__pattern-container">
-                                <img src={linesVertical} className="decoration-vertical" />
+                                <img src={linesVertical} className="decoration-vertical" alt="" />
                             </div>
                             <div className="decoration__pattern-container">
-                                <img src={linesHorizontal} />
+                                <img src={linesHorizontal} alt="" />
                             </div>
                         </div>
 

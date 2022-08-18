@@ -140,19 +140,184 @@
     z-index: 0;
 }
 
-@media screen and (max-width: 1024px) {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .timeline__temp-line {
+        display: block;
+        height: 122rem;
+    }
+
+    .timeline__component {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timeline__component {
+        margin: 0rem 0;
+    }
+
+    .timeline__point {
+        display: none;
+    }
     
 }
 
-/* Media Queries - Mobile Devices */
-@media screen and (max-width: 600px) {
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .timeline__section {
+        padding: 3rem 0;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr 3px 1fr;
+    }
+
+    .timeline-header {
+       transform: translateX(-50%);
+    }
+
+    .timeline-subheader {
+        transform: translateX(-50%);
+     }
+
+    .timeline__empty-component, .timeline-spacer {
+        display: block;
+    }
+
+    .timeline__middle {
+        display: block;
+    }
     
+
+    .timeline__temp-line {
+        display: block;
+        transform: translateX(-50%);
+        height: 158rem;
+    }
+
+    .timeline__component-left {
+        margin-right: 4rem;
+    }
+
+    .timeline__component-right {
+        margin-left: 4rem;
+    }
+
+    .timeline__middle-top {
+        margin-bottom: 5rem;
+    }
+
+    .timeline__point {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--color-white);
+        width: 4rem;
+        height: 4rem;
+        margin-top: 1rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+    }
+
+    .timeline__point--bottom {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .timeline__point svg {
+        font-size: 2rem;
+        color: var(--primary-bg-color);
+    }
+
+    #education-title {
+        display: flex;
+        position: relative;
+        width: 15rem;
+        height: 3rem;
+        border-radius: 2rem;
+        margin: 3rem 0;
+    }
 }
 
-@media screen and (max-width: 768px) {
-    
-}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 
-@media screen and (max-width: 992px) {
+    .timeline__section {
+        padding: 3rem 0;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr 3px 1fr;
+    }
+
+    .timeline-header {
+       transform: translateX(-50%);
+    }
+
+    .timeline-subheader {
+        transform: translateX(-50%);
+     }
+
+    .timeline__empty-component, .timeline-spacer {
+        display: block;
+    }
+
+    .timeline__middle {
+        display: block;
+    }
     
-}
+
+    .timeline__temp-line {
+        display: block;
+        transform: translateX(-50%);
+        height: 151rem;
+    }
+
+    .timeline__component-left {
+        margin-right: 4rem;
+    }
+
+    .timeline__component-right {
+        margin-left: 4rem;
+    }
+
+    .timeline__middle-top {
+        margin-bottom: 5rem;
+    }
+
+    .timeline__point {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--color-white);
+        width: 4rem;
+        height: 4rem;
+        margin-top: 1rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+    }
+
+    .timeline__point--bottom {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .timeline__point svg {
+        font-size: 2rem;
+        color: var(--primary-bg-color);
+    }
+
+    #education-title {
+        display: flex;
+        position: relative;
+        width: 15rem;
+        height: 3rem;
+        border-radius: 2rem;
+        margin: 3rem 0;
+    }
+
+
+ }
