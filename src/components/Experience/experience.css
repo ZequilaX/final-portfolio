@@ -140,26 +140,73 @@
     z-index: 0;
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .timeline {
+        justify-items: center;
+    }
+
+    .timeline__component {
+        
+        width: fit-content;
+    }
 
     .timeline__temp-line {
         display: block;
-        height: 122rem;
+        height: 160rem;
+    }
+  
+  }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .timeline {
+        justify-items: center;
+    }
+
+    .timeline__component {
+        margin: 2rem;
+        width: fit-content;
+    }
+
+    .timeline__temp-line {
+        display: block;
+    }
+  
+  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .timeline {
+        justify-items: center;
+    }
+
+    .timeline__temp-line {
+        display: block;
+        height: 142rem;
     }
 
     .timeline__component {
         display: flex;
         flex-direction: column;
-    }
-
-    .timeline__component {
-        margin: 0rem 0;
+        margin: 2rem 0;
+        width: fit-content
     }
 
     .timeline__point {
         display: none;
     }
+
+    .timeline__empty-component {
+        display: none;
+    }
+
+    .timeline-spacer {
+        display: none;
+    }
+
+    
     
 }
 
@@ -252,13 +299,6 @@
         grid-template-columns: 1fr 3px 1fr;
     }
 
-    .timeline-header {
-       transform: translateX(-50%);
-    }
-
-    .timeline-subheader {
-        transform: translateX(-50%);
-     }
 
     .timeline__empty-component, .timeline-spacer {
         display: block;
@@ -272,7 +312,11 @@
     .timeline__temp-line {
         display: block;
         transform: translateX(-50%);
-        height: 151rem;
+        height: 164rem;
+    }
+
+    .timeline__component {
+        width: 80%;
     }
 
     .timeline__component-left {
@@ -284,6 +328,7 @@
     }
 
     .timeline__middle-top {
+        transform: translateX(50%);
         margin-bottom: 5rem;
     }
 
@@ -294,11 +339,12 @@
         background: var(--color-white);
         width: 4rem;
         height: 4rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         margin-left: 50%;
         transform: translateX(-50%);
         border-radius: 50%;
     }
+
 
     .timeline__point--bottom {
         width: 2rem;
@@ -317,6 +363,7 @@
         height: 3rem;
         border-radius: 2rem;
         margin: 3rem 0;
+        margin-left: 50%;
     }
 
 
