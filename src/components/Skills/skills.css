@@ -145,24 +145,75 @@
     align-self: center;
 }
 
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .skill-card-container {
+        padding: 0 3rem;
+    }
+
+    .decoration__pattern-container {
+        flex-direction: row;
+        padding: 0.2rem;
+    }
+  
+  }
+
 /* Medium devices (tablet, 768px and up) */
 @media (min-width: 768px) {
     .skill-card-container {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
         padding-bottom: 3rem;
         
     }
 
+    .skills__title {
+        font-size: 3rem;
+    }
+
     .skill-card {
-        width: 50%;
+        width: 90%;
+        height: 40rem;
+        justify-content: space-around;
     }
 
     .decoration__pattern-container {
-        flex-direction: column;
+        flex-direction: row;
         padding: 0.2rem;
     }
+    
+    .skill-card-top {
+        padding-left: 2rem;
+    }
+
+    .skill-card-top h2 {
+        height: 5rem;
+        font-size: 3rem;
+    }
+
+    .skill-card-top svg {
+        font-size: 4rem;
+    }
+
+    .skill-progress-slider {
+        height: 4rem;
+        border-radius: 0 2rem 2rem 0;
+    }
+
+    .skill-progress-slider h5 {
+        padding-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .skill__progress-percentage {
+        border-radius: 0 2rem 2rem 0;
+    }
+
+    
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -187,11 +238,14 @@
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+    .skills__container-content {
+        padding: 5rem 0;
+    }
+
     .skill-card-container {
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        padding-bottom: 3rem;
         
     }
 
