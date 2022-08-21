@@ -152,7 +152,7 @@
     }
 
     .timeline__temp-line {
-        display: block;
+        display: none;
         height: 160rem;
     }
   
@@ -288,6 +288,7 @@
     }
 }
 
+
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 
@@ -312,7 +313,7 @@
     .timeline__temp-line {
         display: block;
         transform: translateX(-50%);
-        height: 164rem;
+        height: 170rem;
     }
 
     .timeline__component {
@@ -367,4 +368,10 @@
     }
 
 
+ }
+
+ @media (min-width: 1920px) {
+    .timeline__temp-line {
+        height: 164rem;
+    }
  }

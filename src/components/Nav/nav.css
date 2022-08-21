@@ -32,3 +32,61 @@ nav a.active {
     background: var(--color-white);
     color: var(--accent-color);
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    nav {
+        padding: 0.7rem 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        width: 30%;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        width: 23%;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+}

@@ -3,6 +3,7 @@ import './about.css'
 import whiteSplash from '../../assets/white-splash.png'
 import lightningSpark from '../../assets/lightning-spark.png'
 import ME from '../../assets/me.png'
+import CV from '../../assets/SebastianCollison-CV.pdf'
 
 const About = () => {
     return (
@@ -16,7 +17,9 @@ const About = () => {
               <p className="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum elit felis, eu vestibulum dui cursus in. Nullam ipsum quam, ullamcorper sed diam nec, rhoncus cursus nibh. In mi odio, lacinia ac iaculis eu, rhoncus a ipsum. In hac habitasse platea dictumst. Aliquam erat volutpat. Vivamus commodo velit justo, eu egestas sem consectetur ac. Cras vehicula tellus a sagittis laoreet.</p><br/>
               <p className="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum elit felis, eu vestibulum dui cursus in. Nullam ipsum quam, ullamcorper sed diam nec, rhoncus cursus nibh. In mi odio, lacinia ac iaculis eu, rhoncus a ipsum. In hac habitasse platea dictumst. Aliquam erat volutpat. Vivamus commodo velit justo, eu egestas sem consectetur ac. Cras vehicula tellus a sagittis laoreet.</p><br/>
               <div className="button__container">
-                <button className="btn btn-secondary">CIRRICULUM VITAE</button>
+                <button className="btn btn-secondary">
+                  <a href={CV} download>CIRRICULUM VITAE</a>
+                </button>
                 <div className="decoration-line-long-white"></div>
               </div>
             </div>

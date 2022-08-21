@@ -341,20 +341,22 @@
 @media (min-width: 1400px) {
     .work__section {
         padding: 5rem 0;
-        height: 100vh;
+        height: 100%;
       }
     
       .work__container {
         height: 100%;
         display: flex;
         flex-direction: row;
+        margin-bottom: 3rem;
       }
      
       .work__left-container {
-        margin: 4rem 0;
+        margin: 0rem 0;
         position: relative;
         width: 50%;
-        display: flex;
+        height: 100%;
+        display: none;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -366,8 +368,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 50%;
-        padding: 5rem 5rem 5rem 13rem;
+        width: 80%;
+        padding: 0rem 10rem;
       }
     
       .work__right-header {
@@ -398,19 +400,22 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        height: 100%;
+        justify-content: center;
+        height: 50%;
         padding: 2rem 0;
+
       }
-    
+      
     
       .projects__row-left {
         display: flex;
         align-items: center;
-        width: 100%;
+
       }
-    
+
       .projects__row-text {
+        font-size: 1.2rem;
+       
         font-family: var(--font-primary);
         color: var(--primary-bg-color);
       }
@@ -422,12 +427,11 @@
       .project-description {
         pointer-events: none;
       }
-
       
       
       #project-count {
         font-family: var(--font-primary);
-        font-size: var(--font-size-sm);
+        font-size: 1.5rem;
       }
     
       /* ==== TV Display ==== */
@@ -447,7 +451,7 @@
       justify-content: center;
       align-items: center;
       background: linear-gradient(135deg, #515151 0%, #373737 50%, #202020   100%);
-      height: 40rem;
+      height: 35rem;
       width: 100%;
       border-radius: 4rem;
       border: 0.05rem solid var(--color-white);
@@ -472,6 +476,7 @@
       align-items: center;
       width: 100%;
       height: 20%;
+      margin: 1.5rem 0;
     }
     
     .tv__knob {
@@ -480,8 +485,9 @@
       align-items: center;
       color: var(--color-white);
       background: radial-gradient(#575757, #333333);
-      height: 5rem;
-      width: 5rem;
+      height: 3rem;
+      width: 3rem;
+      aspect-ratio: 1/1;
       border-radius: 50%;
       margin: 0 3rem;
       border: 0.05rem solid var(--color-white);
@@ -490,7 +496,7 @@
     
     .tv__knob svg {
       position: absolute;
-      font-size: 4.5rem;
+      font-size: 2rem;
     }
     
     
@@ -517,7 +523,7 @@
     
     .tv__slot {
       width: 25em;
-      height: 5rem;
+      height: 3rem;
       background: radial-gradient(#575757, #333333);
       border-radius: 3em;
       border: 0.05rem solid var(--color-white);
@@ -525,14 +531,292 @@
     
     #tv-wire {
       position: absolute;
-      width: 60rem;
+      width: 48rem;
       top: 1;
       margin-left: 2rem;
       margin-top: 10rem;
     }
 
-    .portfolio__buttons-container, .portfolio__preview {
+    .portfolio__buttons-container {
+      display: flex;
+      gap: 1rem;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    .portfolio__button {
+      width: 100%;
+      padding: 0.2rem;
+      border-radius: 0.5rem;
+      text-align: center;
+  }
+
+  .portfolio__button-preview {
+    color: var(--color-white);
+    background: var(--primary-bg-color);
+}
+
+.portfolio__button-preview:hover {
+    color: var(--color-white);
+    background: var(--accent-color);
+}
+
+.portfolio__button-source {
+  color: var(--primary-bg-color);
+  background: var(--color-white);
+  border: 1px solid var(--primary-bg-color);
+}
+
+.portfolio__button-source:hover {
+  border-color: var(--accent-color);
+}
+
+    .portfolio__preview {
+      display: block;
+
+    }
+
+  
+}
+
+    @media (min-width: 1920px) {
+      .work__section {
+        padding: 5rem 0;
+        height: 100%;
+      }
+    
+      .work__container {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3rem;
+      }
+     
+      .work__left-container {
+        margin: 0rem 0;
+        position: relative;
+        width: 50%;
+        height: 100%;
         display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: linear-gradient(135deg, #242424 0%, #4B4B4B 50%, #2A2929  100%);
+        border-radius: 5rem;
+      }
+    
+      .work__right-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        padding: 0rem 10rem;
+      }
+    
+      .work__right-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    
+      .work__right-header h1 {
+        font-family: var(--font-primary);
+        font-size: 4rem;
+      }
+    
+      .work__right-seperator {
+        width: 100%;
+        border-style: 0.5rem solid var(--primary-bg-color);
+        background: var(--primary-bg-color);
+        margin: 2rem 0;
+      }
+    
+      .work__right-container ul,
+      a {
+        list-style: none;
+        text-decoration: none;
+      }
+    
+      .projects__row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
+        padding: 2rem 0;
+
+      }
+      
+    
+      .projects__row-left {
+        display: flex;
+        align-items: center;
+
+      }
+
+      .projects__row-text {
+        font-size: 1.2rem;
+       
+        font-family: var(--font-primary);
+        color: var(--primary-bg-color);
+      }
+    
+      .projects__row-text:hover {
+        color: var(--accent-color);
+      }
+    
+      .project-description {
+        pointer-events: none;
+      }
+      
+      
+      #project-count {
+        font-family: var(--font-primary);
+        font-size: 1.5rem;
+      }
+    
+      /* ==== TV Display ==== */
+    
+     .work__left-inside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      height: 100%;
+      padding-top: 1em;
+     }
+    
+     .tv__screen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #515151 0%, #373737 50%, #202020   100%);
+      height: 35rem;
+      width: 100%;
+      border-radius: 4rem;
+      border: 0.05rem solid var(--color-white);
+     }
+    
+    
+     .tv__screen-middle {
+      background-image: var(--primary-bg-color);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 90%;
+      width: 90%;
+      border-radius: 3rem;
+      transition: 0.5s ease all;
+     }
+    
+    .tv__bottom {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 20%;
+      margin: 1.5rem 0;
     }
     
+    .tv__knob {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--color-white);
+      background: radial-gradient(#575757, #333333);
+      height: 3rem;
+      width: 3rem;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      margin: 0 3rem;
+      border: 0.05rem solid var(--color-white);
+      transition: 0.5s ease-out;
+    }
+    
+    .tv__knob svg {
+      position: absolute;
+      font-size: 2rem;
+    }
+    
+    
+    #tv__knob-left {
+      transform: rotate(0deg);
+    }
+    
+    #tv__knob-right {
+      transform: rotate(0deg);
+    }
+    
+    /* ====== TV KNOB POSITIONS ===== */
+    
+    
+    #knob__arrow {
+      transform: rotate(90deg);
+      letter-spacing: 0.5rem;
+      font-size: 1.5rem;
+    }
+    
+    #knob__circle {
+      font-size: 2rem;
+    }
+    
+    .tv__slot {
+      width: 25em;
+      height: 3rem;
+      background: radial-gradient(#575757, #333333);
+      border-radius: 3em;
+      border: 0.05rem solid var(--color-white);
+    }
+    
+    #tv-wire {
+      position: absolute;
+      width: 48rem;
+      top: 1;
+      margin-left: 2rem;
+      margin-top: 10rem;
+    }
+
+    .portfolio__buttons-container {
+      display: flex;
+      gap: 1rem;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+
+    .portfolio__button {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      text-align: center;
+  }
+
+  .portfolio__button-preview {
+    color: var(--color-white);
+    background: var(--primary-bg-color);
+}
+
+.portfolio__button-preview:hover {
+    color: var(--color-white);
+    background: var(--accent-color);
+}
+
+.portfolio__button-source {
+  color: var(--primary-bg-color);
+  background: var(--color-white);
+  border: 1px solid var(--primary-bg-color);
+}
+
+.portfolio__button-source:hover {
+  border-color: var(--accent-color);
+}
+
+    .portfolio__preview {
+      display: block;
+
+    }
 }

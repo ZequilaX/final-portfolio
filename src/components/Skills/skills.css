@@ -186,26 +186,27 @@
     }
     
     .skill-card-top {
-        padding-left: 2rem;
+        align-items: center;
+        padding-left: 1rem;
     }
 
     .skill-card-top h2 {
-        height: 5rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .skill-card-top svg {
-        font-size: 4rem;
+        margin-right: 0;
+        font-size: 3rem;
     }
 
     .skill-progress-slider {
-        height: 4rem;
+        height: 3.5rem;
         border-radius: 0 2rem 2rem 0;
     }
 
     .skill-progress-slider h5 {
-        padding-left: 1rem;
-        font-size: 1.5rem;
+        padding-left: 0.5rem;
+        font-size: 1.2rem;
     }
 
     .skill__progress-percentage {
@@ -246,17 +247,29 @@
         flex-direction: row;
         justify-content: center;
         width: 100%;
+        padding: 0;
         
     }
 
     .skill-card {
-        width: 50%;
+        width: 40%;
+        height: 40%;
     }
 
     .decoration__pattern-container {
         flex-direction: column;
-        padding: 0.2rem;
+        padding: 0.2rem 0.2rem;
     }
 
-    
+    .decoration__pattern-container img {
+        height: 10rem;
+        padding: 1rem;
+    }
  }
+
+ @media (min-width: 1920px) {
+    .skill-card {
+        aspect-ratio: 1/1;
+    }
+ }
+ 

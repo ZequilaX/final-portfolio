@@ -231,7 +231,8 @@ header {
    }
 
    .header__content-right img{
-    width: 90%;
+    width: 100%;
+    margin-left: 3rem;
    }
    
    .header__socials {
@@ -248,11 +249,12 @@ header {
 
    .header__content-left h2 {
     font-size: 3.4rem;
-    line-height: 4rem;
+    line-height: 6rem;
    }
 
    .header__content-left h3 {
     font-size: 2.2rem;
-    line-height: 3rem;
+    line-height: 0.5rem;
+    margin-bottom: 1rem;
    }
 }
